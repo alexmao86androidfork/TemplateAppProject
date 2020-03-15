@@ -34,9 +34,11 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 import com.koogu.smarthome.core.BaseActivity;
 import com.koogu.smarthome.core.BaseFragment;
-import com.koogu.smarthome.fragment.news.NewsFragment;
+import com.koogu.smarthome.fragment.ai.AISceneFragment;
+import com.koogu.smarthome.fragment.device.DeviceListFragment;
+import com.koogu.smarthome.fragment.homepage.HomeFragment;
 import com.koogu.smarthome.fragment.profile.ProfileFragment;
-import com.koogu.smarthome.fragment.trending.TrendingFragment;
+import com.koogu.smarthome.fragment.room.RoomFragment;
 import com.koogu.smarthome.utils.Utils;
 import com.koogu.smarthome.utils.XToastUtils;
 import com.koogu.smarthome.R;
@@ -59,7 +61,6 @@ import butterknife.BindView;
  * @since 2019-07-07 23:53
  */
 public class MainActivity extends BaseActivity implements View.OnClickListener, ViewPager.OnPageChangeListener, BottomNavigationView.OnNavigationItemSelectedListener, ClickUtils.OnClick2ExitListener, Toolbar.OnMenuItemClickListener {
-
     @BindView(R.id.toolbar)
     Toolbar toolbar;
     @BindView(R.id.view_pager)
@@ -108,9 +109,10 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
 
         //主页内容填充
         BaseFragment[] fragments = new BaseFragment[]{
-                new NewsFragment(),
-                new TrendingFragment(),
-                new ProfileFragment()
+                new HomeFragment(),
+                new RoomFragment(),
+                new DeviceListFragment(),
+                new AISceneFragment()
         };
         FragmentAdapter<BaseFragment> adapter = new FragmentAdapter<>(getSupportFragmentManager(), fragments);
         viewPager.setOffscreenPageLimit(mTitles.length - 1);

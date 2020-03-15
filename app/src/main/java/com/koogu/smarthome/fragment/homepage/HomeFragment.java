@@ -15,7 +15,7 @@
  *
  */
 
-package com.koogu.smarthome.fragment.news;
+package com.koogu.smarthome.fragment.homepage;
 
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -39,7 +39,7 @@ import butterknife.BindView;
  * @since 2019-10-30 00:15
  */
 @Page(anim = CoreAnim.none)
-public class NewsFragment extends BaseFragment {
+public class HomeFragment extends BaseFragment {
 
     @BindView(R.id.recyclerView)
     RecyclerView recyclerView;
@@ -63,7 +63,7 @@ public class NewsFragment extends BaseFragment {
      */
     @Override
     protected int getLayoutId() {
-        return R.layout.fragment_news;
+        return R.layout.fragment_home;
     }
 
     /**

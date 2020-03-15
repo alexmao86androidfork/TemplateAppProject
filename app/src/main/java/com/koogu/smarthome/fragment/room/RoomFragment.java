@@ -15,7 +15,7 @@
  *
  */
 
-package com.koogu.smarthome.fragment.trending;
+package com.koogu.smarthome.fragment.room;
 
 import com.koogu.smarthome.R;
 import com.koogu.smarthome.core.BaseFragment;
@@ -28,7 +28,7 @@ import com.xuexiang.xui.widget.actionbar.TitleBar;
  * @since 2019-10-30 00:19
  */
 @Page(anim = CoreAnim.none)
-public class TrendingFragment extends BaseFragment {
+public class RoomFragment extends BaseFragment {
 
     /**
      * @return 返回为 null意为不需要导航栏
@@ -45,7 +45,7 @@ public class TrendingFragment extends BaseFragment {
      */
     @Override
     protected int getLayoutId() {
-        return R.layout.fragment_trending;
+        return R.layout.fragment_room;
     }
 
     /**
