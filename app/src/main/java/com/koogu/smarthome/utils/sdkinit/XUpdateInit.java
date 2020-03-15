@@ -23,7 +23,7 @@ import android.content.Context;
 import com.koogu.smarthome.utils.update.CustomUpdateDownloader;
 import com.koogu.smarthome.utils.update.CustomUpdateFailureListener;
 import com.koogu.smarthome.utils.update.XHttpUpdateHttpServiceImpl;
-import com.koogu.smarthome.MyApp;
+import com.koogu.smarthome.SmarthomeApplication;
 import com.xuexiang.xupdate.XUpdate;
 import com.xuexiang.xupdate.utils.UpdateUtils;
 
@@ -46,7 +46,7 @@ public final class XUpdateInit {
 
     public static void init(Application application) {
         XUpdate.get()
-                .debug(MyApp.isDebug())
+                .debug(SmarthomeApplication.isDebug())
                 //默认设置只在wifi下检查版本更新
                 .isWifiOnly(false)
                 //默认设置使用get请求检查版本

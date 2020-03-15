@@ -31,7 +31,7 @@ import com.koogu.smarthome.utils.sdkinit.XUpdateInit;
  * @author xuexiang
  * @since 2018/11/7 下午1:12
  */
-public class MyApp extends Application {
+public class SmarthomeApplication extends Application {
 
     @Override
     protected void attachBaseContext(Context base) {
@@ -55,7 +55,7 @@ public class MyApp extends Application {
         XUpdateInit.init(this);
 
         //运营统计数据运行时不初始化
-        if (!MyApp.isDebug()) {
+        if (!SmarthomeApplication.isDebug()) {
             UMengInit.init(this);
         }
 

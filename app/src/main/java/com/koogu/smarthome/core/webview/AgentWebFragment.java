@@ -65,7 +65,7 @@ import com.just.agentweb.download.DownloadListenerAdapter;
 import com.just.agentweb.download.DownloadingService;
 import com.just.agentweb.utils.LogUtils;
 import com.just.agentweb.widget.IWebLayout;
-import com.koogu.smarthome.MyApp;
+import com.koogu.smarthome.SmarthomeApplication;
 import com.koogu.smarthome.R;
 import com.koogu.smarthome.utils.XToastUtils;
 import com.xuexiang.xutil.net.JsonUtil;
@@ -145,7 +145,7 @@ public class AgentWebFragment extends Fragment implements FragmentKeyDown {
                 //WebView载入该url地址的页面并显示。
                 .go(getUrl());
 
-        if (MyApp.isDebug()) {
+        if (SmarthomeApplication.isDebug()) {
             AgentWebConfig.debug();
         }
 
