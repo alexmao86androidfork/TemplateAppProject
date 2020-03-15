@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2020 xuexiangjys(xuexiangjys@163.com)
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~       http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  ~
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="1024dp"
+    android:height="1024dp"
+    android:viewportWidth="1024"
+    android:viewportHeight="1024">
+
+    <path
+        android:fillColor="?attr/colorAccent"
+        android:pathData="M899.321 422.392l-0.384-0.392-366.37-304.203-0.929-0.771-1.072-0.545c-12.615-6.419-25.952-6.419-38.566 0l-1.072 0.545-368.674 306.117-1.038 2.113c-1.792 3.646-5.959 12.856-5.959 19.626 0 18.31 12.086 30.611 30.076 30.611 7.956 0 14.495-5.472 16.704-7.564l25.449-20.145v364.66c0 26.643 10.103 51.598 28.447 70.269 18.344 18.672 42.863 28.954 69.04 28.954h452.62c26.178 0 50.697-10.282 69.042-28.954 18.344-18.671 28.446-43.626 28.446-70.269V449.79l25.151 22.753c1.847 1.808 8.646 7.847 17.001 7.847 5.62 0 14.111 0 22.092-8.122l6.621-6.739 0.807-2.465c5.096-15.553 2.317-30.758-7.432-40.672zM600.076 538.678c-23.606-23.34-55.139-36.193-88.79-36.193-33.653 0-65.188 12.853-88.794 36.192-24.239 23.965-37.587 56.792-37.587 92.435v224.234H280.158c-18.235 0-32.519-14.54-32.519-33.102v-421.18l263.647-221.263 263.647 221.263v421.18c0 18.562-14.286 33.102-32.523 33.102H637.663V631.111c0-35.642-13.349-68.469-37.587-92.433z m-155.019 92.433c0-18.391 6.784-35.425 19.102-47.962 12.319-12.537 29.055-19.442 47.127-19.442 18.069 0 34.805 6.905 47.123 19.442 12.318 12.537 19.102 29.57 19.102 47.962v224.234H445.057V631.111z" />
+</vector>
